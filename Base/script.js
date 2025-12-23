@@ -54,34 +54,38 @@ document.addEventListener("DOMContentLoaded", () => {
         outputCupom.classList.remove("hidden");
     });
 
-    form.addEventListener("submit", function (evento) {
-        evento.preventDefault();
+    const campos = document.querySelectorAll("div.campos input");
+    let objetoFormulario = {};
+    let valido = true;
 
-        const campos = document.querySelectorAll("div.campos input");
-        let objetoFormulario = {};
-        let valido = true;
-
-        for (let input of campos) {
+    for (let input of campos) {
+        input.addEventListener("blur", (evento) => {
             let validez = validarFormulario(input, outputForm);
-            if (validez) {
-                input.style.outline = "none";
-
-                outputForm.classList.remove("invalido");
-                outputForm.classList.add("valido");
-
-                outputForm.textContent = "formulário enviado com exito";
-
-                objetoFormulario[`${input.id.slice(5)}`] = input.value;
-            } else {
+            if (!validez) {
                 input.style.outline = "solid 1px red";
                 valido = false;
-                break;
+                outputForm.classList.remove("hidden");
+            } else {
+                input.style.outline = "none";
+                valido = true;
+                outputForm.classList.add("hidden");
             }
+        });
+        if (!valido) {
+            break;
         }
+    }
 
-        outputForm.classList.remove("hidden");
-
+    form.addEventListener("submit", function (evento) {
+        evento.preventDefault();
         if (valido) {
+            outputForm.classList.remove("invalido");
+            outputForm.classList.add("valido");
+
+            outputForm.textContent = "formulário enviado com exito";
+            outputForm.classList.remove("hidden");
+
+            objetoFormulario[`${input.id.slice(5)}`] = input.value;
             console.log(objetoFormulario);
             localStorage.setItem(
                 "formulario",
