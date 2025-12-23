@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #30343f;
+}
+
+h2,
+h3 {
+    font-size: 2.5rem;
+}
+
+p,
+legend,
+label,
+span,
+button {
+    font-size: 1.6rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+    background-color: #1e2749;
+    width: 82.2%;
+    color: whitesmoke;
+}
+
+main,
+div {
+    border-radius: 0.5rem;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+form {
+    width: 100%;
+}
+
+form fieldset {
+    margin-bottom: 2rem;
+}
+
+h2,
+h3,
+legend,
+span {
+    color: #fb8500;
+    font-weight: 700;
+}
+
+fieldset {
+    border-color: #555;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem 2rem 1rem;
+    border-radius: 0.5rem;
+}
+
+label {
+    width: 20%;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 1rem;
+    width: 75%;
+    height: 4.5rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    background-color: #444;
+    color: #fff;
+    border: solid 0.1rem #555;
+    border-radius: 0.5rem;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: solid 1px #fb8500;
+}
+
+form.form-cupom input {
+    margin: 0 0 1.5rem 0;
+    width: 100%;
+}
+
+form.form-cupom button {
+    width: 100%;
+    background-color: #fb8500;
+    border: 0;
+    border-radius: 0.5rem;
+    color: #fff;
+    height: 4rem;
+}
+
+form.form-cupom button:hover {
+    background-color: #c46d0b;
+}
+
+form.form-cupom button:active {
+    background-color: #fb8500;
+}
+
+form#form-dados button {
+    color: #fff;
+    width: 100%;
+    height: 4rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background-color: #45a049;
+}
+
+form#form-dados button:hover {
+    background-color: #449248;
+}
+
+form#form-dados button:active {
+    background-color: #45a049;
+}
+
+div.div-azul-claro {
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #273469;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.campos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.logos {
+    margin-bottom: 3rem;
+}
+
+.logos img {
+    padding-right: 0.2rem;
+}
+
+.meus-dados {
+    padding: 7em 18rem;
+    width: 67%;
+}
+
+.resumo {
+    padding: 3.5rem 1.2rem;
+    width: 33%;
+}
+
+.termos {
+    color: #aaa;
+}
+
+div.termos a,
+div#mostrar-aba-cupom p {
+    color: #fb8500;
+}
+
+div#mostrar-aba-cupom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div#mostrar-aba-cupom i {
+    font-size: 2rem;
+    color: #fb8500;
+}
+
+div#mostrar-aba-cupom i:hover {
+    cursor: pointer;
+}
+
+div.icons {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+div.icons i {
+    font-size: 2rem;
+}
+
+div#texto-seguranca * {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+div#div-seguranca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #45a049;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+img#img-seguranca {
+    width: 60%;
+    margin: 1.5rem 0;
+    border-radius: 1.5rem;
+}
+
+p.valido {
+    color: #45a049;
+    font-weight: 700;
+}
+
+p.invalido {
+    color: red;
+    font-weight: 700;
+}
+
+.hidden {
+    display: none;
+}
