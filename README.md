@@ -5,6 +5,10 @@
 
 O **Projeto-FormsJS** é um estudo prático focado na criação, manipulação e validação de formulários utilizando JavaScript puro. O objetivo é explorar como coletar dados do usuário de forma eficiente e garantir a integridade das informações antes do envio.
 
+## Resultado
+
+<img width="1141" height="639" alt="image" src="https://github.com/user-attachments/assets/1cc653ac-cd42-455f-b123-bd420c5fd773" />
+
 ## 🎯 Objetivo do Projeto
 
 Este repositório foi criado para consolidar conhecimentos sobre:
